@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Monotype Corsiva";
+  src: local("Monotype Corsiva"),
+    local("Monotype-Corsiva"),
+    url("./../fonts/monotypecorsiva.woff2") format("woff2"),
+    url("./../fonts/monotypecorsiva.woff") format("woff"),
+    url("./../fonts/monotypecorsiva.ttf") format("ttf");
+  font-weight: normal;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+body {
+  background-color: #D7C0B4;
+  color: #452D2D;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  font-family: "Monotype Corsiva", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.header__foto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__foro-item {
+  /* width: max(90px, 50%); */
+  width: calc(var(--index) * 8.5);
+  height: calc(var(--index) * 21);
+  /* height: min(calc(var(--index) * 21), 50%); */
+  background-color: #474545;
+}
+
+.center {
+  width: calc(var(--index) * 19);
+  height: calc(var(--index) * 29);
+  background-color: red;
+}
+
+.header h2 {
+  font-size: calc(var(--index) * 7.7);
+  margin: 0.15em 0;
+}
+
+.header h3 {
+  font-size: calc(var(--index) * 5);
+}
+
+.main__label {}
+
+.main {}
+
+.main__date {}
+
+.main__timer {}
+
+/* ===========================SECTION=MAIN-DATE=========================== */
+
+.main__date {
+  display: flex;
+}
+.main__date-img {
+  width: 200px;
+  height: 300px;
+  background-color: #452D2D;
+}
+
+.main__date-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__date-content-item {
+  
+}
+
+/* ===========================SECTION=MAIN-TIMER=========================== */
+
