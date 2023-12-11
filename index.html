@@ -7,6 +7,7 @@
   <title>Приглашение</title>
   <link rel="icon" href="images/N.svg">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,30 +32,51 @@
 
     <main class="main">
 
-      <div class="main__label">
+      <section class="main__label">
         <h3>Дорогие родные и друзья!</h3>
-        <h3>Скоро в нашей жизни состоится знаменательное событие - создание нашей семьи</h3>
-      </div>
+        <h4>Скоро в нашей жизни состоится знаменательное событие - создание нашей семьи</h4>
+      </section>
 
       <section class="main__date">
         <div class="main__date-img"></div>
         <div class="main__date-content">
-          <div class="main__date-content-item">запомните этот день</div>
-          <div class="main__date-content-item">09.09.2024</div>
-          <div class="main__date-content-item">Это чудесный день, когда мы станем мужем и женой</div>
+          <p class="main__date-content-item">запомните этот день</p>
+          <p class="main__date-content-item">09.09.2024</p>
+          <p class="main__date-content-item">Это чудесный день,<br> когда мы станем<br>мужем и женой</p>
         </div>
       </section>
 
       <section class="main__timer">
         <div class="container">
-          <p>И мы хотим, чтобы в этот значимый для нас день, Вы были рядом</p>
-          <p>До события осталось:</p>
-          <p>92 дня 18 часов 36 минут</p>
-          <p>Место проведения:</p>
-          <p>г. Москва, ул. Гондона Вольного 30 см.</p>
+          <div class="main__timer-item">
+            <h2>И мы хотим, чтобы в этот значимый для нас день, Вы были рядом</h2>
+            <h3>До события осталось:</h3>
+          </div>
+          <div class="main__timer-item" id="countdown">
+            <div class="timer-item-countdown">
+              <h2 id="days"></h2>
+              <small>Дней</small>
+            </div>
+            <div class="timer-item-countdown">
+              <h2 id="hours"></h2>
+              <small>Часов</small>
+            </div>
+            <div class="timer-item-countdown">
+              <h2 id="minutes"></h2>
+              <small>Минут</small>
+            </div>
+            <div class="timer-item-countdown">
+              <h2 id="seconds"></h2>
+              <small>Секунд</small>
+            </div>
+          </div>
+          <div class="main__timer-item">
+            <h2>Место проведения:</h2>
+            <h3><a href="https://yandex.ru/maps/-/CDqVEO1Z" target="_blank">г. Москва, пос. Новобутаково, дом 44</a></h3>
+          </div>
 
         </div>
-        <div class="main__timer-img"><img src="images/map.jpg" alt="maps"></div>
+        <div class="main__map" id="map"></div>
       </section>
 
     </main>
@@ -63,13 +85,15 @@
       <div class="container">
         <p>Мы Вас ждем!</p>
         <p>Наши контакты:</p>
-        <p>Варвара +794565165196</p>
-        <p>Артём +794565165196</p>
+        <p>Варвара <a href="tel:+7 (991) 312-11-46">+7 (991) 312-11-46</a></p>
+        <p>Артём <a href="tel:+7 (952) 201-73-52">+7 (952) 201-73-52</a></p>
       </div>
     </footer>
 
   </div>
 
 </body>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+<script src="js/main.js" defer></script>
 
 </html>
