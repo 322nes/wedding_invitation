@@ -92,7 +92,7 @@ body {
 .main__date-img {
   width: calc(var(--index) * 13.53);
   height: calc(var(--index) * 23.9);
-  background-image: url('./../images/5.jpg');
+  background-image: url('./../images/100.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -179,6 +179,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   text-align: center;
-  
+  text-wrap: nowrap;
+}
+
+.footer p {
+  margin: 15px 0;
+}
+
+.footer p:nth-child(1) {
+  font-size: calc(var(--index) * 3.3);
 }
 
