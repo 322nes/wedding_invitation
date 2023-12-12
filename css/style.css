@@ -46,7 +46,6 @@ body {
 }
 
 .header__foro-item {
-  background-image: url('./../images/100.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,16 +56,19 @@ body {
 
 .left {
   margin-right: 5px;
-
+  background-image: url('./../images/1.jpg');
+  
 }
 
 .center {
   width: calc(var(--index) * 16);
   height: calc(var(--index) * 23.9);
   background-color: red;
+  background-image: url('./../images/2.jpg');
 }
 
 .right {
+  background-image: url('./../images/3.jpg');
   margin-left: 5px;
 }
 
@@ -113,7 +115,7 @@ body {
 .main__date-img {
   width: calc(var(--index) * 13.53);
   height: calc(var(--index) * 23.9);
-  background-image: url('./../images/100.jpg');
+  background-image: url('./../images/4.jpg');
   background-size: cover;
   background-position: center;
 }
