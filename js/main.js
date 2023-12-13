@@ -1,3 +1,5 @@
+/////////////////////////////// LEFT TIME ///////////////////////////////
+
 const year = 2024;
 const days = document.querySelector('#days');
 const hours = document.querySelector('#hours');
@@ -5,8 +7,6 @@ const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
 const countdown = document.querySelector('#countdown');
 
-
-// Расчеты
 const currentYear = new Date().getFullYear();
 const nextYear = new Date(`Sep 09 2024 00:00:00`);
 
@@ -26,22 +26,17 @@ function whatNy() {
 
 setInterval(whatNy, 1000);
 
+////////////////////////////// YANDEX MAPS //////////////////////////////
 
-
-
-//////////////////////////////////////////////////////////////////////////////////////
-
-const center = [55.87572521856528, 37.436384970775734];
+const center = [55.87572521856528, 37.436384970775734]; // координаты на карте
 
 function init() {
   let map = new ymaps.Map('map', {
-    center: center,
-    zoom: 15
+    center: center, // положение точки на карте
+    zoom: 15 // отдаленность
   });
 
-let placemark = new ymaps.Placemark(center, {}, {
-
-})
+let placemark = new ymaps.Placemark(center, {}, {});
 
   map.controls.remove('searchControl'); // удаляем поиск
   map.controls.remove('trafficControl'); // удаляем контроль трафика
