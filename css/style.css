@@ -56,7 +56,6 @@ body {
   background-size: cover;
   width: calc(var(--index) * 7.16);
   height: calc(var(--index) * 17.55);
-  background-color: #474545;
 }
 
 .left {
@@ -69,7 +68,6 @@ body {
 .center {
   width: calc(var(--index) * 16);
   height: calc(var(--index) * 23.9);
-  background-color: red;
   background-image: url('./../images/2.jpg');
   background-position: 70% 50%;
   background-size: cover;
